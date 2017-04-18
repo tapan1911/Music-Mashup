@@ -24,7 +24,7 @@ Music-Mashup takes the following steps to generate the mashup :
 * Play the ordered audio slices using Pygame
 
 # Project Architecture Overview
-![Alt text](/img/Picture1.png?raw=true "Music-Mashup System Design")
+<img src="/img/Picture1.png" width="600" height="400">
 
 # Author
 Music-Mashup is developed by Tapan Bohra and Medha Shrivastava under the supervision of Professor Ling Liu of Georgia Institute
