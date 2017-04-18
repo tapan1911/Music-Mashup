@@ -46,6 +46,8 @@ No. of songs  | Total Transition Time (in ms)
 6  | 12.29310036
 9  | 17.15087891
 
+<img src="/img/Picture2.png" width="500" height="350">
+
 ## Author ##
 Music-Mashup is developed by Tapan Bohra and Medha Shrivastava under the supervision of **Professor Ling Liu** of Georgia Institute of Technology. For help, please contact tbohra3@gatech.edu
 
