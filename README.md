@@ -23,6 +23,9 @@ Music-Mashup takes the following steps to generate the mashup :
 * Calculate BPM for each frame of audio files and relatively order the audio slices using the avg. BPM to ensure smooth transitions
 * Play the ordered audio slices using Pygame
 
+* Project Architecture Overview
+![Alt text](/img/Picture1.png?raw=true "Optional Title")
+
 # Author
 Music-Mashup is developed by Tapan Bohra and Medha Shrivastava under the supervision of Professor Ling Liu of Georgia Institute
 of Technology. For help, please contact tbohra3@gatech.edu
