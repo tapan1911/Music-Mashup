@@ -14,6 +14,14 @@ allow for cropping and editing of music files but require in depth domain knowle
 
 * Flexibility: In case of multiple ordering options allows for refresh option which creates a unique mashup each time.
 
+# Workflow
+Music-Mashup takes the following steps to generate the mashup :
+
+* Read audio file and convert to wav format
+* Retrieve the lyrics for a song by web crawling
+* Extract highlights of songs by lyrical analysis
+* Calculate BPM for each frame of audio files and relatively order the audio slices using the avg. BPM to ensure smooth transitions
+* Play the ordered audio slices using Pygame
 
 # Author
 Music-Mashup is developed by Tapan Bohra and Medha Shrivastava under the supervision of Professor Ling Liu of Georgia Institute
