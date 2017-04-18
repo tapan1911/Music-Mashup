@@ -41,7 +41,6 @@ Beats per minute (bpm) is used as a measure of tempo in music. Methods to find t
 <img src="/img/Picture1.png" width="600" height="400">
 
 ## Author ##
-Music-Mashup is developed by Tapan Bohra and Medha Shrivastava under the supervision of Professor Ling Liu of Georgia Institute
-of Technology. For help, please contact tbohra3@gatech.edu
+Music-Mashup is developed by Tapan Bohra and Medha Shrivastava under the supervision of **Professor Ling Liu** of Georgia Institute of Technology. For help, please contact tbohra3@gatech.edu
 
 
