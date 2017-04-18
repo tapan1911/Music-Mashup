@@ -39,6 +39,8 @@ Beats per minute (bpm) is used as a measure of tempo in music. Methods to find t
 <img src="/img/Picture1.png" width="600" height="400">
 
 ## Performance ##
+Plot is showing (Total Time Taken - Sum of actual length of songs) aka Total Transition Time v/s the number of songs in the input playlist
+
 No. of songs  | Total Transition Time (in ms)
 ------------- | -------------
 1  | 0.888109207
