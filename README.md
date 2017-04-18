@@ -35,10 +35,16 @@ Beats per minute (bpm) is used as a measure of tempo in music. Methods to find t
   * For our implementation we use a BPM detection algorithm as presented in the paper of G. Tzanetakis, G. Essl and P. Cook "Audio Analysis using the Discrete Wavelet Transform" 
   * This gives us the flexibility to find BPM per frame (since avg. BPM is not always indicative of tempo of song segment) for the selected highlights of song and order them accordingly to ensure smooth transitions
 
-
-
 ## Project Architecture Overview ##
 <img src="/img/Picture1.png" width="600" height="400">
+
+## Performance ##
+No. of songs  | Total Transition Time (in ms)
+------------- | -------------
+1  | 0.888109207
+3  | 6.464004517
+6  | 12.29310036
+9  | 17.15087891
 
 ## Author ##
 Music-Mashup is developed by Tapan Bohra and Medha Shrivastava under the supervision of **Professor Ling Liu** of Georgia Institute of Technology. For help, please contact tbohra3@gatech.edu
