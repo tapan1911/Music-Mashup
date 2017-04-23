@@ -1,3 +1,8 @@
+#################################
+### SAMPLE FILE TO PLAY MUSIC ###
+#################################
+
+
 from pydub import AudioSegment
 
 import pygame
@@ -12,24 +17,23 @@ from bpmDetection import read_wav, bpm_detector
 import os.path
 
 playlist = ["ASkyFullofStars","BestDayOfMyLife", "BlankSpace", "FakePlasticTrees", "FightSong", "FixYou", "Halo", "HeyJude", "Levels"]
-# playlist = ["BrothersAnthem","KingsNeverDie"]
 
 for p in playlist:
-	sound = AudioSegment.from_mp3("/Users/tapan/acads/aic/project/playlist/"+p+".mp3")
-	if not os.path.isfile("/Users/tapan/acads/aic/project/playlist/"+p+".wav"):
-		sound.export("/Users/tapan/acads/aic/project/playlist/"+p+".wav", format="wav")
+	sound = AudioSegment.from_mp3("/Users/tapan/acads/aic/Music-Mashup/playlist/"+p+".mp3")
+	if not os.path.isfile("/Users/tapan/acads/aic/Music-Mashup/playlist/"+p+".wav"):
+		sound.export("/Users/tapan/acads/aic/Music-Mashup/playlist/"+p+".wav", format="wav")
 
 pygame.init()
 pygame.mixer.init()
 
 for p in playlist:
-	pygame.mixer.music.load("/Users/tapan/acads/aic/project/playlist/"+p+".wav")
+	pygame.mixer.music.load("/Users/tapan/acads/aic/Music-Mashup/playlist/"+p+".wav")
 	pygame.mixer.music.play()
 	sleep(5)
 	pygame.mixer.music.stop()
 
 	#BPM CALCULATION
-	filename = "/Users/tapan/acads/aic/project/playlist/"+p+".wav"
+	filename = "/Users/tapan/acads/aic/Music-Mashup/playlist/"+p+".wav"
 	samps,fs = read_wav(filename)
 
 	data = []

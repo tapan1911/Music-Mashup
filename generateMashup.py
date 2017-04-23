@@ -1,3 +1,7 @@
+###################################
+### CODE FILE TO CREATE MASHUPS ###
+###################################
+
 from pydub import AudioSegment
 
 import pygame
@@ -12,18 +16,13 @@ import findLyrics
 
 import os.path
 
-# playlist = ["ASkyFullofStars"]
-# playlist = ["ASkyFullofStars","BestDayOfMyLife", "BlankSpace"]
-# playlist = ["ASkyFullofStars","BestDayOfMyLife", "BlankSpace", "FakePlasticTrees", "FightSong", "FixYou"]
-# playlist = ["ASkyFullofStars","BestDayOfMyLife", "BlankSpace", "FakePlasticTrees", "FightSong", "FixYou", "Halo", "HeyJude", "Levels"]
 playlist = ["OneDance","WorkFromHome", "Work", "ITookAPillInIbiza", "MeMyself&I", "ColdWater", "IHateUILoveU", "Youth", "7Years","PillowTalk"]
 name = ["One Dance", "Work From Home", "Work", "I Took A Pill In Ibiza", "Me Myself & I", "Cold Water", "I Hate U I Love U", "Youth", "7 Years", "PillowTalk" ]
 artist = ["Drake", "Fifth Harmony", "Rihanna", "Mike Posner", "G-Eazy", "Major Lazer", "Gnash", "Troye Sivan", "Lukas Graham", "Zayn"]
 
 for p in playlist:
-	sound = AudioSegment.from_mp3("/Users/tapan/acads/aic/project/cutsongs/"+p+".mp3")
-	# if not os.path.isfile("/Users/tapan/acads/aic/project/cutsongs/"+p+".wav"):
-	sound.export("/Users/tapan/acads/aic/project/cutsongs/"+p+".wav", format="wav")
+	sound = AudioSegment.from_mp3("/Users/tapan/acads/aic/Music-Mashup/cutsongs/"+p+".mp3")
+	sound.export("/Users/tapan/acads/aic/Music-Mashup/cutsongs/"+p+".wav", format="wav")
 	print "WAV Generated For ",p
 	sleep(1)
 
@@ -40,10 +39,7 @@ for x in range(len(playlist)):
 		print(lyr)
 		print
 
-print
-print "Slicing The Songs"
-print 
-sleep(10)
+#sleep(10)
 
 pygame.init()
 pygame.mixer.init()
@@ -51,7 +47,7 @@ pygame.mixer.init()
 avgBPMArray = []
 for p in playlist:
 	#BPM CALCULATION
-	filename = "/Users/tapan/acads/aic/project/cutsongs/"+p+".wav"
+	filename = "/Users/tapan/acads/aic/Music-Mashup/cutsongs/"+p+".wav"
 	samps,fs = read_wav(filename)
 
 	data = []
@@ -87,7 +83,7 @@ sleep(5)
 
 for p in avgBPMArray:
 	print p[1]
-	pygame.mixer.music.load("/Users/tapan/acads/aic/project/cutsongs/"+p[1]+".wav")
+	pygame.mixer.music.load("/Users/tapan/acads/aic/Music-Mashup/cutsongs/"+p[1]+".wav")
 	pygame.mixer.music.play()
 	while pygame.mixer.music.get_busy():
 		sleep(1)

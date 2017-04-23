@@ -1,3 +1,7 @@
+################################
+### CODE FILE TO FIND LYRICS ###
+################################
+
 import urllib
 from urlparse import urlparse
 import re

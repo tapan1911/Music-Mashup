@@ -1,3 +1,7 @@
+##################################
+### CODE FILE TO CALCULATE BPM ###
+##################################
+
 import wave, array, math, time, argparse, sys
 import numpy, pywt
 from scipy import signal
